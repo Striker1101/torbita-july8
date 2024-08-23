@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form>
+      <label for="username">
+        USERNAME:
+        <input
+          required
+          placeholder="John Doe"
+          type="text"
+          id="username"
+          name="username"
+        />
+      </label>
+      <br />
+
+      <label for="email">
+        EMAIL:
+        <input
+          autocomplete="email"
+          type="email"
+          name="email"
+          id="email"
+        /> </label
+      ><br />
+
+      <label for="age">
+        AGE:
+        <input type="number" name="age" id="age" />
+      </label>
+      <br />
+      <label for="religion">
+        RELIGION:
+        <input type="checkbox" name="religion" id="religion" />
+      </label>
+      <br />
+      <label for="fav_color">
+        FAVORITE COLOR:
+        <input type="color" name="fav_color" id="fav_color" />
+      </label>
+      <br />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Advance</title>
+  </head>
+  <body>
+    <!-- //CSS Transition -->
+
+    <div>
+      <button class="button">Click Me</button>
+      <input type="text" class="input-field" placeholder="Click to focus" />
+      <!-- //embeded css -->
+
+      <style>
+        /* short hand syntax 
+       transition: property duration timing-function delay;
+      */
+
+        /** long hand syntax 
+      transition
+      transition-delay
+      transition-duration
+      transition-property
+      transition-timing-function
+      */
+
+        .button {
+          background-color: #3498db;
+          color: white;
+          padding: 10px 20px;
+          border: none;
+          cursor: pointer;
+          margin-left: 30px;
+          transition: background-color 0.5s ease-in;
+        }
+
+        .button:hover {
+          background-color: red;
+        }
+
+        .input-field {
+          border: 2px solid #ccc;
+          padding: 10px;
+          transition: border-color 1s ease;
+        }
+
+        .input-field:focus {
+          border-color: red;
+          outline: none;
+        }
+      </style>
+    </div>
+
+    <!-- CSS Animation -->
+    <div>
+      <span class="bounce">Data is Here</span>
+
+      <style>
+        /* short hand syntax
+            animation: name duration timing-function delay iteration-count
+        direction fill-mode;
+            */
+        .bounce {
+          width: 100px;
+          height: 100px;
+          /* background-color: #e74c3c; */
+          position: relative;
+          margin-left: 30px;
+          margin-top: 30px;
+          animation: bounce 5s ease-in-out infinite;
+        }
+
+        @keyframes bounce {
+          /* from {
+            background-color: #e74c3c;
+          }
+          to {
+            background-color: #3498db;
+          } */
+
+          0%,
+          20%,
+          50%,
+          80%,
+          100% {
+            transform: translateY(0);
+          }
+
+          40% {
+            transform: translateY(-150px);
+          }
+          60% {
+            transform: translateY(-75px);
+          }
+        }
+      </style>
+    </div>
+
+    <!-- CSS Transform -->
+    <div>
+      <div class="transform">THIS WOULD BE TRANSFORMED</div>
+      <button class="btn2">Add Scale Transform</button>
+
+      <style>
+        .transform {
+          /* transform: rotate(12deg); */
+
+          /* transform: scale(0.5); */
+
+          /* transform: translateY(20px); */
+        }
+
+        .btn2 {
+          margin-left: 30px;
+          transition: transform 2s ease-in-out;
+          border-radius: 40px;
+          border: none;
+          color: white;
+        }
+
+        .btn2:hover {
+          transform: scale(0.9);
+        }
+      </style>
+    </div>
+
+    <!-- CSS MEDIA QUERY -->
+    <div>
+      <div class="media">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. A, animi.
+        Voluptas molestias a itaque minima similique nesciunt eos unde, nihil
+        excepturi inventore recusandae, ad dignissimos debitis doloremque
+        quisquam delectus eius.
+      </div>
+
+      <style>
+        .media {
+          color: white;
+        }
+
+        /* Extra small devices (phones, 600px and down) */
+        @media only screen and (max-width: 600px) {
+          .media {
+            background-color: red;
+          }
+        }
+
+        /* Small devices (portrait tablets and large phones, 600px and up) */
+        @media only screen and (min-width: 600px) {
+          .media {
+            background-color: blue;
+          }
+        }
+
+        /* Medium devices (landscape tablets, 768px and up) */
+        @media only screen and (min-width: 768px) {
+          .media {
+            background-color: green;
+          }
+        }
+
+        /* Large devices (laptops/desktops, 992px and up) */
+        @media only screen and (min-width: 992px) {
+          .media {
+            background-color: yellow;
+          }
+        }
+
+        /* Extra large devices (large laptops and desktops, 1200px and up) */
+        @media only screen and (min-width: 1200px) {
+          .media {
+            background-color: purple;
+          }
+        }
+      </style>
+    </div>
+  </body>
+</html>

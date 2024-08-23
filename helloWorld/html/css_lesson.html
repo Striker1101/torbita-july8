@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Lesson</title>
+    <link rel="stylesheet" href="/css/css_lesson.css" />
+  </head>
+  <body>
+    <!-- inline css -->
+    <h1 style="color: blue; background-color: black">Welcome to css Inline</h1>
+
+    <!-- embedded css  -->
+
+    <!-- class -->
+    <h1 class="embedded_class">Lorem ipsum dolor sit amet.</h1>
+    <p class="embedded_class">Lorem ipsum dolor sit amet.</p>
+    <div class="embedded_class">Lorem ipsum dolor sit amet.</div>
+
+    <!-- id -->
+    <h3 id="embedded_id">Lorem ipsum dolor sit amet.</h3>
+
+    <!-- tag -->
+    <span>Lorem ipsum dolor sit amet.</span>
+    <span>Lorem ipsum dolor sit amet.</span>
+    <span>Lorem ipsum dolor sit amet.</span>
+
+    <!-- css specification/hierarchy/presidence -->
+    <h2 id="spec_id" class="spec_class" style="color: red">
+      Lorem ipsum dolor sit amet.
+    </h2>
+
+    <div id="color_lesson">Lorem ipsum dolor sit amet.</div>
+
+    <style>
+      /* css code */
+      #color_lesson {
+        color: #d79544b2;
+        background-image: url("/assets/images/IMG_8703.JPG");
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+      }
+
+      #spec_id {
+        color: blue;
+      }
+
+      .spec_class {
+        color: green;
+      }
+
+      h2 {
+        color: yellow;
+      }
+    </style>
+  </body>
+</html>
+
+<!-- h1.embeded_class*3 -->

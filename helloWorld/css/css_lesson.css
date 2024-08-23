@@ -1,0 +1,20 @@
+/* css code */
+/* selector_identifier selector_name{
+        property:value;
+        
+        you can have as much property and value as you want 
+        note: if you reuse the same the latter one would override
+        the previous one
+      } */
+
+.embedded_class {
+    color: blue;
+}
+
+#embedded_id {
+    color: green;
+}
+
+span {
+    color: yellow;
+}

@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  width: 100%;
+}
+
+#todos > table {
+  width: 100%;
+  margin: 15px;
+}
+td {
+  margin: 18px !important;
+}
+
+#form > form {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  gap: 10px;
+  margin: 15px;
+  align-items: end;
+}
+
+#add > button {
+  width: 50px;
+  height: 50px;
+  font-size: xx-large;
+  border-radius: 100%;
+  position: absolute;
+  bottom: 150px;
+  right: 80px;
+}
